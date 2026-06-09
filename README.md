@@ -1,6 +1,6 @@
 # SRW UI Kit React
 
-A React component library pulled directly from the srw-dev production site. The showcase app lets you browse and test each component in isolation.
+A React component library pulled directly from the srw-dev production site. The showcase app lets you browse components in full-page context; Storybook covers isolated states and args-driven testing for primitives.
 
 ## Tech stack
 
@@ -8,49 +8,52 @@ A React component library pulled directly from the srw-dev production site. The 
 - Vite
 - SCSS (with design tokens)
 - React Router v6
+- Storybook v10
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev
+npm run dev        # showcase app at http://localhost:5173
+npm run storybook  # Storybook at http://localhost:6006
 ```
-
-The dev server runs at `http://localhost:5173` by default.
 
 ## Scripts
 
 | Script | Description |
 |--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Type-check and build for production |
+| `npm run dev` | Start the showcase app |
+| `npm run storybook` | Start Storybook |
+| `npm run build` | Type-check and build the showcase app |
+| `npm run build-storybook` | Build Storybook for static deployment |
 | `npm run preview` | Preview the production build |
 
 ## Components
 
-| Component | Description |
-|-----------|-------------|
-| `Alert` | Status and notification alerts |
-| `ALink` | Styled anchor/link component |
-| `Badge` | Label and status badges |
-| `Button` | Primary interactive button |
-| `Card` | Content container card |
-| `ContactForm` | Contact/inquiry form |
-| `FaqAccordion` | Collapsible FAQ accordion |
-| `Footer` | Page footer |
-| `Hero` | Hero/banner section |
-| `Input` | Form input field |
-| `Modal` | Dialog/modal overlay |
-| `Navbar` | Navigation bar |
-| `PricingCard` | Pricing plan card |
-| `Reveal` | Scroll-reveal animation wrapper |
+| Component | Category | Storybook |
+|-----------|----------|-----------|
+| `Alert` | Primitive | Yes |
+| `ALink` | Primitive | Yes |
+| `Badge` | Primitive | Yes |
+| `Button` | Primitive | Yes |
+| `Input` | Primitive | Yes |
+| `Card` | Container | Yes |
+| `Modal` | Container | Yes |
+| `PricingCard` | Container | Yes |
+| `ContactForm` | Pattern | Showcase only |
+| `FaqAccordion` | Pattern | Yes |
+| `Footer` | Layout | Yes |
+| `Hero` | Layout | Yes |
+| `Navbar` | Layout | Yes |
+| `Reveal` | Utility | Yes |
 
 ## Project structure
 
 ```
 src/
 ├── components/     # Reusable UI components (each with .tsx + .scss)
-├── pages/          # Component showcase pages
+├── stories/        # Storybook stories
+├── pages/          # Full-page showcase demos
 ├── context/        # React context providers (Theme, Modal)
 ├── styles/         # Global styles and design tokens
 ├── router.tsx      # App routing
