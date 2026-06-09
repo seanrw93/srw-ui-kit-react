@@ -9,7 +9,7 @@ const meta: Meta<typeof PricingCard> = {
       name: 'Starter',
       price: 'from £499',
       note: 'A clean, fast brochure site for small businesses.',
-      features: ['Up to 5 pages', 'Mobile responsive', 'SEO foundations', 'Handover session', 'Delivered in 7 days'],
+      features: ['Up to 5 pages', 'Mobile responsive', 'SEO foundations', 'Handover session', 'Delivered in 7 days*'],
       cta: 'Get started',
       popular: false,
     },
@@ -25,7 +25,7 @@ const starterPlan: PricingPlan = {
   name: 'Starter',
   price: 'from £499',
   note: 'A clean, fast brochure site for small businesses.',
-  features: ['Up to 5 pages', 'Mobile responsive', 'SEO foundations', 'Handover session', 'Delivered in 7 days'],
+  features: ['Up to 5 pages', 'Mobile responsive', 'SEO foundations', 'Handover session', 'Delivered in 7 days*'],
   cta: 'Get started',
 }
 
@@ -33,7 +33,7 @@ const proPlan: PricingPlan = {
   name: 'Pro',
   price: 'from £899',
   note: 'A full e-commerce store, ready to sell from day one.',
-  features: ['Unlimited products', 'Stripe payments', 'Inventory management', 'SEO foundations', 'Handover session', 'Delivered in 14 days'],
+  features: ['Unlimited products', 'Stripe payments', 'Inventory management', 'SEO foundations', 'Handover session', 'Delivered in 14 days*'],
   cta: 'Get started',
   popular: true,
 }
@@ -42,7 +42,7 @@ const scalePlan: PricingPlan = {
   name: 'Scale',
   price: 'from £1,499',
   note: 'Performance-focused build for growing businesses.',
-  features: ['Everything in Pro', 'Performance audit', 'Core Web Vitals pass', 'Analytics setup', 'Delivered in 21 days'],
+  features: ['Everything in Pro', 'Performance audit', 'Core Web Vitals pass', 'Analytics setup', 'Delivered in 21 days*'],
   cta: 'Get started',
 }
 
